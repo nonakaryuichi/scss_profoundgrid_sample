@@ -1,0 +1,63 @@
+/* *****************************
+ *
+ * Import file to Scss or Sass.
+ *
+ **************************** */
+@import "compass";
+@import 'grid';
+
+$total_width: 100%;
+$gutter_width: 1%;
+
+
+
+article{
+	margin-bottom: $gutter_width;
+	height: 80px;
+}
+
+#grid{
+	margin-bottom: 0px;
+	height: 0px;
+
+	div{
+		background: none;
+
+		div{
+			background: black;
+		}
+	}
+}
+
+article div{
+	height: 80px;
+	background: #eee;
+	font-family: 'Raleway', Arial, sans-serif;
+	font-weight: 900;
+	font-size: 24px;
+	text-align: center;
+	color: #333;
+	line-height: 80px;
+}
+
+@include generate_helper_classes();
+
+#row1{
+	div{@include column(1);}
+	@include generate_grid_positions(div, 1);
+}
+
+#row2{
+	div{@include column(2);}
+	@include generate_grid_positions(div, 2);
+}
+
+#row3{
+	div{@include column(3);}
+	@include generate_grid_positions(div, 3);
+}
+
+#row4{
+	div{@include column(4);}
+	@include generate_grid_positions(div, 4);
+}

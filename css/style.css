@@ -1,0 +1,288 @@
+/* *****************************
+ *
+ * Import file to Scss or Sass.
+ *
+ **************************** */
+/**
+ * Profound Grid
+ * 
+ * Built in Sass (SCSS) this responsive/adaptive grid supports both fixed and fluid layouts, 
+ * relative and fixed gutters, as well as your choice of semantic markup or generic '.grid-x' classes.
+ * 
+ * The biggest difference to other grid systems is the use of negative margins for column
+ * placements, avoiding the subpixel rounding issues that usually break/uglify fluid layouts
+ * in some browsers.
+ * 
+ * Nested columns are supported too, without having to reset the grid on each level. 
+ *
+ * Credits/Inspiration:
+ * -------------------
+ * Semantic Grid: http://www.semantic.gs
+ * Susy: http://susy.oddbird.net
+ * Negative Grid: http://chrisplaneta.com/freebies/negativegrid-fluid-css-grid-by-chris-planeta/
+ *
+ * @author Profound Creative Studio
+ * @url http://www.profoundgrid.com
+ * @url http://www.weareprofound.com 
+ */
+/**
+ * Establish the grid-containing element.
+ */
+/**
+ * Align an element to the grid.
+ */
+/**
+ * Apply to any column to make it the last one of the current row.
+ */
+article {
+  margin-bottom: 1%;
+  height: 80px; }
+
+#grid {
+  margin-bottom: 0px;
+  height: 0px; }
+  #grid div {
+    background: none; }
+    #grid div div {
+      background: black; }
+
+article div {
+  height: 80px;
+  background: #eee;
+  font-family: "Raleway", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+  line-height: 80px; }
+
+/* Helper Class: Container */
+.row {
+  width: 98%;
+  margin: 0 1%; }
+
+/* Helper Class: Columns */
+.col1 {
+  float: left;
+  margin-right: -100%;
+  width: 7.42%; }
+
+.col2 {
+  float: left;
+  margin-right: -100%;
+  width: 15.83%; }
+
+.col3 {
+  float: left;
+  margin-right: -100%;
+  width: 24.25%; }
+
+.col4 {
+  float: left;
+  margin-right: -100%;
+  width: 32.67%; }
+
+.col5 {
+  float: left;
+  margin-right: -100%;
+  width: 41.08%; }
+
+.col6 {
+  float: left;
+  margin-right: -100%;
+  width: 49.5%; }
+
+.col7 {
+  float: left;
+  margin-right: -100%;
+  width: 57.92%; }
+
+.col8 {
+  float: left;
+  margin-right: -100%;
+  width: 66.33%; }
+
+.col9 {
+  float: left;
+  margin-right: -100%;
+  width: 74.75%; }
+
+.col10 {
+  float: left;
+  margin-right: -100%;
+  width: 83.17%; }
+
+.col11 {
+  float: left;
+  margin-right: -100%;
+  width: 91.58%; }
+
+.col12 {
+  float: left;
+  margin-right: -100%;
+  width: 100%; }
+
+/* Helper Class: Horizontal Position */
+.push0 {
+  margin-left: 0%; }
+
+.push1 {
+  margin-left: 8.42%; }
+
+.push2 {
+  margin-left: 16.83%; }
+
+.push3 {
+  margin-left: 25.25%; }
+
+.push4 {
+  margin-left: 33.67%; }
+
+.push5 {
+  margin-left: 42.08%; }
+
+.push6 {
+  margin-left: 50.5%; }
+
+.push7 {
+  margin-left: 58.92%; }
+
+.push8 {
+  margin-left: 67.33%; }
+
+.push9 {
+  margin-left: 75.75%; }
+
+.push10 {
+  margin-left: 84.17%; }
+
+.push11 {
+  margin-left: 92.58%; }
+
+#row1 div {
+  float: left;
+  margin-right: -100%;
+  width: 7.42%; }
+#row1 div:nth-child(12n+1) {
+  margin-left: 0%;
+  margin-bottom: 1%;
+  clear: both;
+  overflow: hidden;
+  *zoom: 1; }
+#row1 div:nth-child(12n+2) {
+  margin-left: 8.42%;
+  margin-bottom: 1%;
+  clear: none; }
+#row1 div:nth-child(12n+3) {
+  margin-left: 16.83%;
+  margin-bottom: 1%;
+  clear: none; }
+#row1 div:nth-child(12n+4) {
+  margin-left: 25.25%;
+  margin-bottom: 1%;
+  clear: none; }
+#row1 div:nth-child(12n+5) {
+  margin-left: 33.67%;
+  margin-bottom: 1%;
+  clear: none; }
+#row1 div:nth-child(12n+6) {
+  margin-left: 42.08%;
+  margin-bottom: 1%;
+  clear: none; }
+#row1 div:nth-child(12n+7) {
+  margin-left: 50.5%;
+  margin-bottom: 1%;
+  clear: none; }
+#row1 div:nth-child(12n+8) {
+  margin-left: 58.92%;
+  margin-bottom: 1%;
+  clear: none; }
+#row1 div:nth-child(12n+9) {
+  margin-left: 67.33%;
+  margin-bottom: 1%;
+  clear: none; }
+#row1 div:nth-child(12n+10) {
+  margin-left: 75.75%;
+  margin-bottom: 1%;
+  clear: none; }
+#row1 div:nth-child(12n+11) {
+  margin-left: 84.17%;
+  margin-bottom: 1%;
+  clear: none; }
+#row1 div:nth-child(12n+12) {
+  margin-left: 92.58%;
+  margin-bottom: 1%;
+  clear: none; }
+
+#row2 div {
+  float: left;
+  margin-right: -100%;
+  width: 15.83%; }
+#row2 div:nth-child(6n+1) {
+  margin-left: 0%;
+  margin-bottom: 1%;
+  clear: both;
+  overflow: hidden;
+  *zoom: 1; }
+#row2 div:nth-child(6n+2) {
+  margin-left: 16.83%;
+  margin-bottom: 1%;
+  clear: none; }
+#row2 div:nth-child(6n+3) {
+  margin-left: 33.67%;
+  margin-bottom: 1%;
+  clear: none; }
+#row2 div:nth-child(6n+4) {
+  margin-left: 50.5%;
+  margin-bottom: 1%;
+  clear: none; }
+#row2 div:nth-child(6n+5) {
+  margin-left: 67.33%;
+  margin-bottom: 1%;
+  clear: none; }
+#row2 div:nth-child(6n+6) {
+  margin-left: 84.17%;
+  margin-bottom: 1%;
+  clear: none; }
+
+#row3 div {
+  float: left;
+  margin-right: -100%;
+  width: 24.25%; }
+#row3 div:nth-child(4n+1) {
+  margin-left: 0%;
+  margin-bottom: 1%;
+  clear: both;
+  overflow: hidden;
+  *zoom: 1; }
+#row3 div:nth-child(4n+2) {
+  margin-left: 25.25%;
+  margin-bottom: 1%;
+  clear: none; }
+#row3 div:nth-child(4n+3) {
+  margin-left: 50.5%;
+  margin-bottom: 1%;
+  clear: none; }
+#row3 div:nth-child(4n+4) {
+  margin-left: 75.75%;
+  margin-bottom: 1%;
+  clear: none; }
+
+#row4 div {
+  float: left;
+  margin-right: -100%;
+  width: 32.67%; }
+#row4 div:nth-child(3n+1) {
+  margin-left: 0%;
+  margin-bottom: 1%;
+  clear: both;
+  overflow: hidden;
+  *zoom: 1; }
+#row4 div:nth-child(3n+2) {
+  margin-left: 33.67%;
+  margin-bottom: 1%;
+  clear: none; }
+#row4 div:nth-child(3n+3) {
+  margin-left: 67.33%;
+  margin-bottom: 1%;
+  clear: none; }
